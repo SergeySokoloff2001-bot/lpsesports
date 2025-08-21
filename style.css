@@ -1155,12 +1155,10 @@ html {
 
 .team-grid {
   display: grid;
-  /* ровно 5 колонок одинаковой ширины */
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 24px;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0 16px;
+  /* Изменяем на 5 одинаковых колонок */
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-24);
+  align-items: start;
 }
 
 .team-member {
@@ -1193,6 +1191,30 @@ html {
   margin-bottom: var(--space-12);
 }
 
+/* Адаптивность для меньших экранов */
+@media (max-width: 1400px) {
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1100px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .member-desc {
   margin-bottom: var(--space-16);
   line-height: 1.6;
