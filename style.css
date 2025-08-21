@@ -1252,29 +1252,22 @@ html {
   margin-bottom: var(--space-16);
   text-align: center;
 }
-.values-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-8); /* Уменьшили с space-12 до space-8 */
+.value-item {
+  padding: var(--space-6) var(--space-10); /* Ещё меньше */
+  gap: var(--space-6);
+  font-size: var(--font-size-xs); /* Самый маленький текст */
+  min-height: 32px;
 }
 
-.value-item {
-  display: flex;
-  align-items: center;
-  gap: var(--space-8); /* Уменьшили с space-12 до space-8 */
-  padding: var(--space-8) var(--space-12); /* Уменьшили с space-12 до space-8 */
-  background: var(--color-bg-1);
-  border-radius: var(--radius-base);
-  font-size: var(--font-size-sm); /* Добавили уменьшенный размер шрифта */
-  min-height: 40px; /* Фиксированная минимальная высота */
+.values-list {
+  gap: var(--space-6); /* Меньше расстояние между полосками */
 }
 
 .value-item i {
-  color: var(--color-primary);
-  width: 16px; /* Уменьшили иконку с 20px до 16px */
-  font-size: var(--font-size-base); /* Размер иконки */
-  flex-shrink: 0;
+  width: 14px;
+  font-size: var(--font-size-sm);
 }
+
 
 
 
