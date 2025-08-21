@@ -624,6 +624,23 @@ function preloadImages() {
 
 // Initialize preloading
 preloadImages();
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.team-member');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.animationPlayState = 'running';
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  cards.forEach(c => {
+    c.style.animationPlayState = 'paused';
+    observer.observe(c);
+  });
+});
+</script>
 
 // Set initial body opacity for smooth loading
 document.body.style.opacity = '0';
