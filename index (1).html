@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPS Esports - Профессиональная команда Mobile Legends: Bang Bang</title>
+    <meta name="description" content="LPS Esports - российская команда по Mobile Legends: Bang Bang. Турниры, достижения, новости.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="https://pplx-res.cloudinary.com/image/upload/v1755731207/pplx_project_search_images/3fbcc31971ff137516bbec1e6276cfd398f3a493.png" alt="LPS Esports Logo" class="logo-img">
+                <span>LPS Esports</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Главная</a>
+                <a href="#about" class="nav-link">О нас</a>
+                <a href="#tournaments" class="nav-link">Турниры</a>
+                <a href="#team" class="nav-link">Команда</a>
+                <a href="#news" class="nav-link">Новости</a>
+                <a href="#contact" class="nav-link">Контакты</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg">
+            <img src="https://pplx-res.cloudinary.com/image/upload/v1755731207/pplx_project_search_images/0cf192cd21e2b47b962bff11d5618695dd31fc17.png" alt="Gaming Background">
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="https://pplx-res.cloudinary.com/image/upload/v1755731207/pplx_project_search_images/3fbcc31971ff137516bbec1e6276cfd398f3a493.png" alt="LPS Esports">
+            </div>
+            <h1 class="hero-title">LPS ESPORTS</h1>
+            <p class="hero-subtitle">Профессиональная команда Mobile Legends: Bang Bang</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="4">0</span>
+                    <span class="stat-label">Года в киберспорте</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="15">0</span>
+                    <span class="stat-label">Турниров проведено</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="10000">0</span>
+                    <span class="stat-label">₽ призовой фонд</span>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <button class="btn btn--primary" onclick="scrollToSection('tournaments')">
+                    <i class="fas fa-trophy"></i>
+                    Турниры
+                </button>
+                <button class="btn btn--outline" onclick="scrollToSection('contact')">
+                    <i class="fas fa-users"></i>
+                    Присоединиться
+                </button>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>О команде LPS Esports</h2>
+                <p>История, миссия и достижения нашей организации</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h3>История команды</h3>
+                        <p>LPS Esports основана в 2021 году и специализируется на Mobile Legends: Bang Bang. После короткой паузы в 2023-2025 году команда вернулась с новым логотипом - величественным беркутом вместо астронавта, символизируя нашу силу и стремление к победе.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-target"></i>
+                        </div>
+                        <h3>Наша миссия</h3>
+                        <p>Развитие киберспортивной сцены Mobile Legends: Bang Bang в России и СНГ. Мы создаем возможности для игроков всех уровней участвовать в соревнованиях и развивать свои навыки.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Сейчас</h3>
+                        <p>В 2025 году мы запустили LPS INFINITY LEAGUE 5x5 - любительскую лигу для всех желающих показать свои навыки. Проводим регулярные турниры с призовыми фондами.</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755731207/pplx_project_search_images/86950c3d58e6f0d437fb0d67b738b684005f9d89.png" alt="MLBB Heroes">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournaments Section -->
+    <section id="tournaments" class="tournaments">
+        <div class="container">
+            <div class="section-header">
+                <h2>Турниры и достижения</h2>
+                <p>Наши регулярные турниры и успешные проекты</p>
+            </div>
+            <div class="tournaments-grid">
+                <div class="tournament-card active-tournament">
+                    <div class="tournament-badge">Текущий</div>
+                    <div class="tournament-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>LPS INFINITY LEAGUE 5x5</h3>
+                    <p class="tournament-type">Любительская лига</p>
+                    <p class="tournament-desc">Постоянно действующая лига для игроков всех уровней. Возможность показать свои навыки и найти команду.</p>
+                    <div class="tournament-status">
+                        <span class="status status--success">Активна</span>
+                    </div>
+                </div>
+                
+                <div class="tournament-card">
+                    <div class="tournament-badge">Ежемесячно</div>
+                    <div class="tournament-icon">
+                        <i class="fas fa-star-and-crescent"></i>
+                    </div>
+                    <h3>LPS Zodiac Cup</h3>
+                    <p class="tournament-type">Ежемесячные турниры</p>
+                    <p class="tournament-desc">Регулярные турниры с призовым фондом 10,000₽. Соревнования проходят каждый месяц.</p>
+                    <div class="tournament-prize">
+                        <i class="fas fa-trophy"></i>
+                        <span>10,000₽</span>
+                    </div>
+                </div>
+
+                <div class="tournament-card">
+                    <div class="tournament-badge">2022</div>
+                    <div class="tournament-icon">
+                        <i class="fas fa-globe-europe"></i>
+                    </div>
+                    <h3>LPS EU Cup</h3>
+                    <p class="tournament-type">Европейский турнир</p>
+                    <p class="tournament-desc">Международный турнир с участием европейских команд. Призовой фонд составил €550.</p>
+                    <div class="tournament-prize">
+                        <i class="fas fa-trophy"></i>
+                        <span>€550</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Команда</h2>
+                <p>Люди, которые делают LPS Esports</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <i class="fas fa-user-crown"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Екатерина Хмиль</h3>
+                        <p class="member-role">CEO & Основатель</p>
+                        <p class="member-desc">Руководит командой с момента основания. Отвечает за стратегическое развитие и организацию турниров.</p>
+                        <div class="member-contacts">
+                            <a href="tel:+79125124780" class="contact-link">
+                                <i class="fas fa-phone"></i>
+                                +7 (912) 512-47-80
+                            </a>
+                            <a href="mailto:ekaterina_chmil@bk.ru" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                ekaterina_chmil@bk.ru
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-values">
+                    <h3>Наши ценности</h3>
+                    <div class="values-list">
+                        <div class="value-item">
+                            <i class="fas fa-handshake"></i>
+                            <span>Честная игра</span>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-users"></i>
+                            <span>Командная работа</span>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Развитие</span>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Страсть к игре</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news">
+        <div class="container">
+            <div class="section-header">
+                <h2>Новости</h2>
+                <p>Последние новости и анонсы от LPS Esports</p>
+            </div>
+            <div class="news-carousel">
+                <div class="news-track" id="newsTrack">
+                    <article class="news-card">
+                        <div class="news-date">
+                            <span class="day">21</span>
+                            <span class="month">АВГ</span>
+                            <span class="year">2025</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Турнир Skill 2 Kill vs MLBB Golden</h3>
+                            <p>Захватывающий матч сегодня в 18:00 МСК. Две сильные команды сразятся за звание лучших!</p>
+                            <span class="news-tag">Турнир</span>
+                        </div>
+                    </article>
+
+                    <article class="news-card featured">
+                        <div class="news-date">
+                            <span class="day">01</span>
+                            <span class="month">ЯНВ</span>
+                            <span class="year">2025</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Возобновление деятельности LPS Esports</h3>
+                            <p>После паузы команда вернулась с новым логотипом и грандиозными планами на будущее!</p>
+                            <span class="news-tag featured-tag">Важное</span>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-date">
+                            <span class="day">15</span>
+                            <span class="month">ЯНВ</span>
+                            <span class="year">2025</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Запуск LPS INFINITY LEAGUE 5x5</h3>
+                            <p>Новая любительская лига для всех желающих. Регистрация открыта!</p>
+                            <span class="news-tag">Лига</span>
+                        </div>
+                    </article>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Контакты</h2>
+                <p>Свяжитесь с нами и присоединяйтесь к команде</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Телефоны</h3>
+                        <p><a href="tel:+79125124780">+7 (912) 512-47-80</a></p>
+                        <p><a href="tel:+79821372369">+7 (982) 137-23-69</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:ekaterina_chmil@bk.ru">ekaterina_chmil@bk.ru</a></p>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <h3>Написать нам</h3>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Имя</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Сообщение</label>
+                        <textarea id="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755731207/pplx_project_search_images/3fbcc31971ff137516bbec1e6276cfd398f3a493.png" alt="LPS Esports">
+                        <span>LPS Esports</span>
+                    </div>
+                    <p>Профессиональная команда Mobile Legends: Bang Bang</p>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Мы в социальных сетях</h4>
+                    <div class="social-links">
+                        <a href="https://t.me/Lpsnews" target="_blank" class="social-link telegram">
+                            <i class="fab fa-telegram"></i>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="https://www.reddit.com/u/LPS__Esports/s/83LKSfV63l" target="_blank" class="social-link reddit">
+                            <i class="fab fa-reddit"></i>
+                            <span>Reddit</span>
+                        </a>
+                        <a href="https://www.instagram.com/lpssocialmlbb?igsh=b3FwZ3AzM29sZmJl" target="_blank" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://x.com/lps_esports__?s=21" target="_blank" class="social-link twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="https://vk.com/lps_esportsf" target="_blank" class="social-link vk">
+                            <i class="fab fa-vk"></i>
+                            <span>VK</span>
+                        </a>
+                        <a href="https://discord.gg/jwgMS5Mr" target="_blank" class="social-link discord">
+                            <i class="fab fa-discord"></i>
+                            <span>Discord</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-line"></div>
+                <div class="footer-info">
+                    <p>&copy; 2025 LPS Esports. Все права защищены.</p>
+                    <p>Mobile Legends: Bang Bang - киберспорт будущего</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal hidden" id="successModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h3>Сообщение отправлено!</h3>
+            </div>
+            <div class="modal-body">
+                <p>Спасибо за ваше сообщение. Мы свяжемся с вами в ближайшее время.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn--primary" onclick="closeModal('successModal')">Понятно</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
