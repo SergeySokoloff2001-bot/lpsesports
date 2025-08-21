@@ -1153,21 +1153,30 @@ html {
   background: var(--color-bg-3);
 }
 
+/* Контейнер карточек команды: 5 колонок на широких экранах */
 .team-grid {
   display: grid;
-  /* Изменяем на 5 одинаковых колонок */
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: var(--space-24);
   align-items: start;
 }
 
+/* Карточка участника */
 .team-member {
   background: var(--color-surface);
   padding: var(--space-24);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
+  transition: transform var(--duration-normal) var(--ease-standard),
+              box-shadow var(--duration-normal) var(--ease-standard);
+}
+.team-member:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
 }
 
+/* Аватар */
 .member-avatar {
   width: 80px;
   height: 80px;
@@ -1181,51 +1190,26 @@ html {
   font-size: var(--font-size-2xl);
 }
 
+/* Информация */
 .member-info h3 {
   margin-bottom: var(--space-4);
 }
-
 .member-role {
   color: var(--color-primary);
   font-weight: var(--font-weight-medium);
   margin-bottom: var(--space-12);
-}
-
-/* Адаптивность для меньших экранов */
-@media (max-width: 1400px) {
-  .team-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (max-width: 1100px) {
-  .team-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .team-grid {
-    grid-template-columns: 1fr;
-  }
 }
 .member-desc {
   margin-bottom: var(--space-16);
   line-height: 1.6;
 }
 
+/* Контакты внутри карточки */
 .member-contacts {
   display: flex;
   flex-direction: column;
   gap: var(--space-8);
 }
-
 .contact-link {
   display: flex;
   align-items: center;
@@ -1234,29 +1218,26 @@ html {
   text-decoration: none;
   transition: color var(--duration-fast) var(--ease-standard);
 }
-
 .contact-link:hover {
   color: var(--color-primary);
 }
 
+/* Блок ценностей справа/снизу — просто обычная карточка */
 .team-values {
   background: var(--color-surface);
   padding: var(--space-24);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
 }
-
 .team-values h3 {
   margin-bottom: var(--space-16);
   text-align: center;
 }
-
 .values-list {
   display: flex;
   flex-direction: column;
   gap: var(--space-12);
 }
-
 .value-item {
   display: flex;
   align-items: center;
@@ -1265,11 +1246,11 @@ html {
   background: var(--color-bg-1);
   border-radius: var(--radius-base);
 }
-
 .value-item i {
   color: var(--color-primary);
   width: 20px;
 }
+
 
 /* News Section */
 .news {
@@ -1612,13 +1593,19 @@ html {
   }
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .about-content,
-  .team-grid,
-  .contact-content {
-    grid-template-columns: 1fr;
-  }
+/* Адаптивность для team-grid (переопределяет глобальное правило 1fr) */
+@media (max-width: 1600px) {
+  .team-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (max-width: 1280px) {
+  .team-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 900px) {
+  .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 520px) {
+  .team-grid { grid-template-columns: 1fr; }
+}
   
   .footer-content {
     grid-template-columns: 1fr;
