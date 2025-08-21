@@ -1153,11 +1153,10 @@ html {
   background: var(--color-bg-3);
 }
 
-.team-grid {
+.team-section {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: var(--space-32);
-  align-items: start;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
 }
 
 .team-member {
