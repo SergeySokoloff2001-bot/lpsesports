@@ -1153,25 +1153,11 @@ html {
   background: var(--color-bg-3);
 }
 
-.team-section {
+.team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
 }
-
-.team-cards {
-  display: grid;
-  /* 5 колонок фиксированной минимальной ширины */
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 24px;
-}
-
-/* Ограничим максимальную ширину сетки, чтобы не растягивать слишком широко на больших экранах */
-@media (min-width: 1600px) {
-  .team-cards {
-    max-width: 1600px;
-    margin: 0 auto;
-  }
 
 .team-member {
   background: var(--color-surface);
